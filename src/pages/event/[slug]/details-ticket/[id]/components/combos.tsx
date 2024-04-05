@@ -58,7 +58,7 @@ const Combos = ({ discoData }: { discoData: DataDisco }) => {
                   style={{ background: discoColors.navbarForeground, color: discoColors.bgNavbarColor }}
                   className="p-2 rounded-md leading-3"
                 >
-                  {combo.comboDetail.description}
+                  {combo?.comboDetail?.description}
                 </p>
 
                 <div
@@ -111,7 +111,7 @@ const Combos = ({ discoData }: { discoData: DataDisco }) => {
               <Image
                 style={{ border: `solid 2px ${discoColors.bgNavbarColor}` }}
                 className="object-cover rounded-2xl shadow-md"
-                src={combo.comboDetail.image}
+                src={combo?.comboDetail?.image}
                 alt="combo image"
                 height={200}
                 width={200}
